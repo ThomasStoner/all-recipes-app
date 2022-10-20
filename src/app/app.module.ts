@@ -11,6 +11,11 @@ import { IngredientsSelectionComponent } from './pages/ingredients-selection-lay
 import { OccasionsSelectionComponent } from './pages/occasions-selction-layout.component';
 import { CuisinesSelectionComponent } from './pages/cuisines-selection-layout.component';
 import { HomeComponent } from './pages/home-layout.component';
+import { UserNavBarComponent } from './user-page/user-navbar.component';
+import { UserBlurbComponent } from './user-page/user-blurb.component';
+import { HttpClientModule } from "@angular/common/http";
+import { UserInfoComponent } from './user-info/user-info.component';
+
 
 @NgModule({
   declarations: [
@@ -22,11 +27,15 @@ import { HomeComponent } from './pages/home-layout.component';
     IngredientsSelectionComponent,
     OccasionsSelectionComponent,
     CuisinesSelectionComponent,
-    HomeComponent
+    HomeComponent,
+    UserNavBarComponent,
+    UserBlurbComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
